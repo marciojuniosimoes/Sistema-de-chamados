@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+.imagem-avatar{
+    height: 280px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       flex-direction:column;
+    cursor:pointer
+}
+.imagem-avatar input{
+    display: none;
+}
+.imagem-avatar span{
+    z-index: 99;
+    position: absolute;
+    opacity: .7;
+    transform: all 1s;
+
+}
+.imagem-avatar span:hover{
+    opacity: 1;
+    transform:scale(1.5);
+}
+.form-perfil img{
+    margin-bottom: 1em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.form-perfil label{
+    margin-bottom: .8em;
+    font-size: 1.2em;
+}
+.form-perfil input,textarea,select{
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 0;
+    border-radius: 5px;
+    max-width: 600px;
+}
+.form-perfil input:disabled{
+    cursor: not-allowed;
+}
+.form-perfil button{
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-sair{
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
