@@ -7,7 +7,7 @@ import { AuthContext } from '../../contexts/auth';
 function SingIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { LogandoUsuario } = useContext(AuthContext);
+  const { LogandoUsuario, loadingAuth } = useContext(AuthContext);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -38,7 +38,9 @@ function SingIn() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button>Acessar</button>
+          <button type='Submit'>
+            {loadingAuth ? 'Carregando....' : 'Acessar'}
+          </button>
         </form>
         <Link to='/register'>Criar uma conta</Link>
       </div>
