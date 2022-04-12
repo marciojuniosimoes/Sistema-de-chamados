@@ -1,0 +1,64 @@
+.modal{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+.modal .container{
+    position:fixed;
+    top: 15%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6) ;
+
+}
+.close{
+    position: absolute;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 1px;
+    top: 15px;
+    left: 580px;
+}
+.modal h2{
+    margin-bottom: 1.3em;
+}
+.modal h3{
+    margin-top: 2em;
+    margin-bottom: .8em;
+}
+.modal .dados{
+    margin-bottom: 1em;
+}
+.modal a{
+    margin-left: 1em;
+    font-weight: 200;
+    
+}
+.modal p{
+    border:  #999 1px ;
+    border-style:solid;
+    width: auto;
+    border-radius: 5px;
+    padding: .5em .3em;
+    white-space: pre-wrap;
+}
+.modal .dataCadastro{
+    margin-left: 2em;
+}
+.modal span{
+    font-weight: 600;
+}

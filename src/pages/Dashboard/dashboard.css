@@ -1,0 +1,108 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dashboard span{
+    margin: 2em 0;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.novo{
+    float: right;
+    width: auto;
+    padding: 0.4em;
+    height:auto;
+    background-color:#83bf02;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: ease-in 0.2s;
+    margin-bottom: .8em;
+}
+.novo svg{
+    margin-right: .8em;
+}
+.novo:hover{
+    background-color: #83bf58;
+    transform: scale(1.1);
+}
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+table caption{
+    font-size: 1.5em;
+    margin: 5em 0 .75em;
+}
+table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #dddd;
+    padding: .35em;
+}
+table th,
+table tr{
+    padding: .62em;
+    text-align: center;
+}
+table th{
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+table td .acao{
+    border: 0;
+    padding: 5px;
+    margin-right: 3px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+table td .acao svg{
+    vertical-align: middle;
+}
+table td .badge{
+    border-radius: 3px;
+    padding: 3px;
+    color: #fff;
+}
+.btn-maisRegistros{
+    margin: 1.5em;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #181818;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    table{
+        border: 0;
+      }
+    
+      table caption{
+        font-size: 1.3em;
+      }
+    
+      table thead{
+        border:none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+    
+}

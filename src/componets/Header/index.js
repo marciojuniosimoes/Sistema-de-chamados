@@ -12,11 +12,11 @@ export default function Header() {
       <div>
         <img src={user.avatarUrl === null ? avatar : user.avatarUrl} />
       </div>
-      <Link>
+      <Link to='/dashboard'>
         <FiHome color='#FFF' size={24} />
         Chamados
       </Link>
-      <Link>
+      <Link to='/customers'>
         <FiUser color='#FFF' size={24} />
         Clientes
       </Link>
